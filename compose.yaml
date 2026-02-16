@@ -1,0 +1,20 @@
+services:
+  reversed-proxy:
+    image: marzsaksorn/marzweb:nginx
+    ports:
+      - "443:443"
+      - "80:80"
+    networks:
+      - marzweb_network
+    secrets:
+      - ssl-cert
+      - ssl-key
+      
+networks:
+  marzweb_network: {}
+
+secrets:
+  ssl-cert:
+    file: ./ssl.cert
+  ssl-key:
+    file: ./ssl.key

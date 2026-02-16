@@ -1,0 +1,12 @@
+services:
+  node-checkers_multiplayer:
+    image: marzsaksorn/marzweb:node-checkers_multiplayer
+    ports:
+      - "3000:3000"
+    networks:
+      - marzweb_network
+    volumes:
+      - ./volumes/node-checkers_multiplayer:/opt/node-src
+    secrets:
+      - ssl-cert
+      - ssl-key

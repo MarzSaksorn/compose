@@ -1,0 +1,9 @@
+services:
+  Gamehub:
+    image: marzsaksorn/marzweb:Gamehub
+    ports:
+      - "81:81"
+    networks:
+      - marzweb_network
+    volumes:
+      - ./volumes/Gamehub:/opt/app

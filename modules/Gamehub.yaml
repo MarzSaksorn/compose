@@ -6,4 +6,4 @@ services:
     networks:
       - marzweb_network
     volumes:
-      - ./volumes/Gamehub:/opt/app
+      - ./volumes/Gamehub:/opt/app-src

@@ -1,0 +1,1 @@
+docker compose -f compose.yaml -f modules/node-checkers_multiplayer.yaml  -f modules/node-marzweb.yaml -f modules/Gamehub.yaml down && docker compose -f compose.yaml -f modules/node-checkers_multiplayer.yaml -f modules/node-marzweb.yaml -f modules/Gamehub.yaml up

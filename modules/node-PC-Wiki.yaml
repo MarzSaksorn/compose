@@ -1,0 +1,9 @@
+services:
+  node-PC-Wiki:
+    image: marzsaksorn/marzweb:vite-PC-Wiki
+    ports:
+      - "5174:5174"
+    networks:
+      - marzweb_network
+    volumes:
+      - ./volumes/PC-Wiki:/opt/web-src

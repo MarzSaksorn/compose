@@ -1,0 +1,9 @@
+services:
+  nginx-checkers_multiplayer: 
+    image: marzsaksorn/marzweb:nginx-checkers_multiplayer
+    ports:
+      - "82:82"
+    networks:
+      - marzweb_network
+    volumes:
+      - ./volumes/nginx-checkers_multiplayer:/opt/app-src

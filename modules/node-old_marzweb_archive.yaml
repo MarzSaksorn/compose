@@ -1,0 +1,9 @@
+services:
+  node-old_marzweb_archive:
+    image: marzsaksorn/marzweb:vite-old_marzweb_archive
+    ports:
+      - "5175:5175"
+    networks:
+      - marzweb_network
+    volumes:
+      - ./volumes/old_marzweb_archive:/opt/web-src
